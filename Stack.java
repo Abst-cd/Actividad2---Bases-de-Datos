@@ -11,10 +11,15 @@ public class Stack<T> {
 
     public void displayStack(){
         Node<T> nodoVer = top;
+         System.out.println("[");
         while(nodoVer !=null){
+           
             System.out.println(nodoVer.getData());
             nodoVer = nodoVer.next;
+            
         }
+        System.out.println("]");
+
     }
     //se muesta la pila sacando la data de los nodos
 

@@ -61,10 +61,16 @@ public class Queue<T> {
     //metodo de tipo T, basicamente lo que hace es saltarse un nodo para eliminarlo y le resta a la variable de size
 
     public T peek() {
+        
+
         if (this.isEmpty()) {
             return null;
         }
+        
+
         return front.getData();
+        
+
     }
     //muestra el frente de la cola
 
