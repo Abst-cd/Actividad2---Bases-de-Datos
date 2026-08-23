@@ -67,9 +67,12 @@ public class main{
                 colaStringStack.pop();
                 colaStringStack.displayStack();
                 break;
-
+            case 3:
+                System.out.println("Saliendo...");
+                return;
+                
         }
-        System.out.println("Saliendo...");
+            
 
     } while
         (respuesta != 3);
