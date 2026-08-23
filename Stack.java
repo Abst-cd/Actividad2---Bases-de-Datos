@@ -1,7 +1,7 @@
 import java.util.EmptyStackException;;
 public class Stack<T> {
     private int size;
-    private Node<T> top;
+    public Node<T> top;
 
     public Stack(){
         this.top =null;
@@ -46,4 +46,18 @@ public class Stack<T> {
        return nodoaQuitartop;
     }
     //se elimina el top de la pila
+
+@Override
+public String toString() {
+    String resultado = "";
+
+    Node<T> actual = top;
+
+    while (actual != null) {
+        resultado += actual.getData() + " ";
+        actual = actual.getNext();
+    }
+
+    return resultado;
+}
 }
