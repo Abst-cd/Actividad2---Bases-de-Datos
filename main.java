@@ -7,22 +7,15 @@ public class main{
     BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));   
 
  
-        LinkedList<String> aaa = new LinkedList<>();
-        
-        aaa.insert("a");
-
-
-        System.out.println("si");
-
         Queue<String> q = new Queue<>();
-        q.enqueue("aaaaa");
-        q.enqueue("bbbbb");
-        q.enqueue("ccccc");
-        q.dequeue();
+        q.enqueue("primero");
+        q.enqueue("segundo");
+        q.enqueue("tercero");
 
+        System.out.println("Queue funcionando despues de agregarle cosas:");
         q.verTodaQueue();
         
-        System.out.println("Stack:");
+        System.out.println("Stack funcionando despues de agregarle cosas");
 
         Stack<String> stack = new Stack<>();
         stack.push("primero en insertar en codigo");
@@ -30,10 +23,7 @@ public class main{
         stack.push("tercero instertar codigo");
 
         stack.displayStack();
-        stack.pop();
-        System.out.println("====================");
-        stack.pop();
-        stack.displayStack();
+
         
         
         byte respuesta = 0;
