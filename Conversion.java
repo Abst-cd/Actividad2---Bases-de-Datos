@@ -4,10 +4,12 @@ LinkedList<Character> expresionPostfija = new LinkedList<>(); //RESPUESTA DEL AL
 
 
 
-public void conversorAExpresionPOSTFIJA(String expresion){
-    for(int i=0; i < expresion.length();  i++){//se recorre la expresion para analizarla
+public void conversorAExpresionPOSTFIJA(LinkedList<Character> expresion){
+    Node<Character> nodoTemporal = expresion.getNodeHead();
 
-        char actual =expresion.charAt(i);//se define un actual para saber en que "indice " vamos
+
+while(nodoTemporal != null){
+        char actual =nodoTemporal.getData();//se define un actual para saber en que "indice " vamos
         if (Character.isDigit(actual)){
             expresionPostfija.insert(actual);// si es numero, se inserta en la postfija
         } else if (actual ==')'){
@@ -53,8 +55,9 @@ public void conversorAExpresionPOSTFIJA(String expresion){
                 }
             }
         }
+        nodoTemporal = nodoTemporal.getNext();
     }
-
+    
 
         while(!listaOperadores.isEmpty()){
             Character operadorSacado = listaOperadores.pop();

@@ -7,7 +7,7 @@ public Node<T> next;
     public Node(T d, Node<T> nx){
         this.data = d;
         this.next = nx;
-        
+    
     }
 
     public T getData() {

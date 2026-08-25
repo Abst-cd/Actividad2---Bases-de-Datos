@@ -21,8 +21,21 @@
       }
     }
 
-   
+        public int size(){
+         int size = 0;
+         Node<T> actual = head;
 
+            if (actual==null){
+                return 0;
+            } else {
+                
+                while(actual!=null){
+                    actual = actual.getNext();
+                    size++;
+                }    
+            } return size;
+         
+        } 
 
     public void display(){
         Node<T> current = head;
@@ -37,6 +50,10 @@
             return this.head.getData();
         }
         return null;
+    }
+
+    public Node<T> getNodeHead(){
+        return head;
     }
 
      public T getTail(){

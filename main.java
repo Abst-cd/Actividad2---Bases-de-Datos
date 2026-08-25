@@ -34,15 +34,20 @@ public class main{
         System.out.println("3. Salir");
         System.out.println("QUE DESEA HACER, 1/2?");
         respuesta = Byte.parseByte(entrada.readLine());
-
+        int CPUmax = 100;
+        int CPUWhileIdle = 5;
+        int porcentajeGoogle = 30;
+        int porcentajeFireFox = 18;
 
         switch(respuesta){
+
             case 1:
            Queue<String> colaStringGoogle = new Queue<String>();
             colaStringGoogle.enqueue("Google.exe");
             System.out.println("Abriendo Google...");
             colaStringGoogle.verTodaQueue();
             System.out.println("Google abierto");
+            System.out.println("CPU: " + (CPUWhileIdle + porcentajeGoogle));
             System.out.println("Cerrando google...");
             colaStringGoogle.dequeue();
             colaStringGoogle.verTodaQueue();
