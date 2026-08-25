@@ -4,7 +4,7 @@ LinkedList<Character> expresionPostfija = new LinkedList<>(); //RESPUESTA DEL AL
 
 
 
-public void conversorAExpresionPOSTFIJA(LinkedList<Character> expresion){
+public void conversorAExpresionPOSTFIJA(LinkedList<Character> expresion){//cambio de String expresion a LinkedList expresion
     Node<Character> nodoTemporal = expresion.getNodeHead();
 
 
